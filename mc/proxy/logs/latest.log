@@ -1,0 +1,47 @@
+[03:15:53] [main/INFO]: Booting up Velocity 3.1.2-SNAPSHOT (git-b2800087-b112)...
+[03:15:53] [main/INFO]: Loading localizations...
+[03:15:54] [main/INFO]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 1.1.x (Linux x86_64) ciphers
+[03:15:54] [main/WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[03:15:54] [main/INFO]: Loading plugins...
+[03:15:54] [main/ERROR]: Unable to load plugin plugins/limbofilter-1.0.3-jdk16.jar
+com.velocitypowered.api.plugin.InvalidPluginException: Did not find a valid velocity-plugin.json.
+	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.loadCandidate(JavaPluginLoader.java:64) ~[velocity-3.1.2-SNAPSHOT-112.jar:3.1.2-SNAPSHOT (git-b2800087-b112)]
+	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:92) ~[velocity-3.1.2-SNAPSHOT-112.jar:3.1.2-SNAPSHOT (git-b2800087-b112)]
+	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:324) ~[velocity-3.1.2-SNAPSHOT-112.jar:3.1.2-SNAPSHOT (git-b2800087-b112)]
+	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:222) ~[velocity-3.1.2-SNAPSHOT-112.jar:3.1.2-SNAPSHOT (git-b2800087-b112)]
+	at com.velocitypowered.proxy.Velocity.main(Velocity.java:64) ~[velocity-3.1.2-SNAPSHOT-112.jar:3.1.2-SNAPSHOT (git-b2800087-b112)]
+[03:15:55] [main/INFO]: Initializing Simple Virtual Block system...
+[03:15:55] [main/INFO]: Initializing Simple Virtual Item system...
+[03:15:55] [main/INFO]: Hooking into EventManager and StateRegistry...
+[03:15:55] [main/INFO]: Loaded plugin limboapi 1.0.3 by hevav, mdxd44
+[03:15:56] [main/INFO]: Loaded plugin limboauth 1.0.3 by hevav, mdxd44
+[03:15:56] [main/INFO]: Loaded plugin luckperms 5.4.4 by Luck
+[03:15:56] [main/INFO]: Loaded 3 plugins
+[03:15:57] [Velocity Async Event Executor - #0/INFO]:         __    
+[03:15:57] [Velocity Async Event Executor - #0/INFO]:   |    |__)   LuckPerms v5.4.4
+[03:15:57] [Velocity Async Event Executor - #0/INFO]:   |___ |      Running on Velocity - Velocity
+[03:15:57] [Velocity Async Event Executor - #0/INFO]: 
+[03:15:57] [Velocity Async Event Executor - #0/INFO]: Loading configuration...
+[03:15:58] [Velocity Async Event Executor - #0/INFO]: Loading storage provider... [H2]
+[03:15:59] [Velocity Async Event Executor - #0/INFO]: Loading internal permission managers...
+[03:15:59] [Velocity Async Event Executor - #0/INFO]: Performing initial data load...
+[03:15:59] [Velocity Async Event Executor - #0/INFO]: Successfully enabled. (took 3428ms)
+[03:16:00] [Velocity Async Event Executor - #0/INFO]: Creating and preparing packets...
+[03:16:00] [Velocity Async Event Executor - #0/INFO]: Loaded!
+[03:16:04] [Netty epoll Boss #0/INFO]: Listening on /0.0.0.0:25577
+[03:16:04] [Netty epoll Worker #0/INFO]: Listening for GS4 query on /0.0.0.0:25577
+[03:16:04] [main/INFO]: Done (12.93s)!
+[03:16:22] [Netty epoll Worker #3/INFO]: [server connection] jcedeno -> lobby has connected
+[03:26:57] [Netty epoll Worker #3/INFO]: [connected player] jcedeno (/72.184.74.147:59301) has disconnected: An internal error occurred in your connection.
+[03:26:57] [Netty epoll Worker #3/ERROR]: [connected player] jcedeno (/72.184.74.147:59301): exception encountered in com.velocitypowered.proxy.connection.client.ClientPlaySessionHandler@4f3b448f
+io.netty.channel.unix.Errors$NativeIoException: readAddress(..) failed: Connection reset by peer
+[03:26:57] [Netty epoll Worker #3/INFO]: [server connection] jcedeno -> lobby has disconnected
+[03:28:45] [Netty epoll Worker #0/INFO]: [server connection] jcedeno -> lobby has connected
+[03:36:18] [Netty epoll Worker #1/INFO]: [server connection] 1r_i7n -> lobby has connected
+[03:56:01] [Netty epoll Worker #0/INFO]: [connected player] jcedeno (/72.184.74.147:59505) has disconnected
+[03:56:01] [Netty epoll Worker #0/INFO]: [server connection] jcedeno -> lobby has disconnected
+[03:56:07] [Netty epoll Worker #1/INFO]: [connected player] 1r_i7n (/148.255.89.131:54784) has disconnected
+[03:56:07] [Netty epoll Worker #1/INFO]: [server connection] 1r_i7n -> lobby has disconnected
+[03:58:05] [Netty epoll Worker #0/INFO]: [server connection] jcedeno -> lobby has connected
+[05:31:08] [Netty epoll Worker #0/INFO]: [connected player] jcedeno (/72.184.74.147:59689) has disconnected
+[05:31:08] [Netty epoll Worker #0/INFO]: [server connection] jcedeno -> lobby has disconnected

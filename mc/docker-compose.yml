@@ -1,0 +1,46 @@
+version: "3.6"
+# Other docker-compose examples in /examples
+
+services:
+  # Lobby instance
+  purpur:
+    image: itzg/minecraft-server
+    ports:
+      - 42069:25565
+    volumes:
+      - "./mc/lobby:/data"
+    environment:
+      EULA: "true"
+      TYPE: "PURPUR"
+      USE_AIKAR_FLAGS: "true"
+      # Ram
+      MAX_MEMORY: "3G"
+    tty: true
+    stdin_open: true
+    restart: always
+    networks:
+      - my-network
+
+  # Velocity Proxy
+  velocity:
+    image: itzg/bungeecord
+    ports:
+      - "25577:25577"
+    volumes:
+      - "./mc/proxy:/server"
+    environment:
+      # Velocity
+      TYPE: "VELOCITY"
+      # enable env variable replacement
+      REPLACE_ENV_VARIABLES: "TRUE"
+      # define an optional prefix for your env variables you want to replace
+      ENV_VARIABLE_PREFIX: "HYNX_"
+      # All variable starting with HYNX will be replaced and available to the container.
+      MAX_MEMORY: "1G"
+    restart: always
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
